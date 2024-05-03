@@ -1,0 +1,15 @@
+.cabecera__container{
+    display: flex; /*coloca los elementos uno al lado del otro*/
+    justify-content: space-between;/*justificamos el contenido dejando un espacio entre los mismos elementos*/
+    align-items: center;/**/
+    position: fixed;/*fija la posicion de los elementos de nuesto menú*/
+    top: 0;/*establecemos en donde se mantendra fijo*/
+}
+
+
+@media(min-width:834px) {/*solo se mostrara cuando tenga al menos esta cantidad de pixeles*/
+    
+    .cabecera__buscar__item{
+        display: block;
+    }    
+}
