@@ -25,6 +25,39 @@
     gap: 15px;/*crea un espaciado entre los items de la seccion superior*/
 }
 
+
+/*MENU*/
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__itens{
+    display: flex;/*hacemos que los elementos queden al lado unos de otros*/
+    flex-direction: column;/*con esta funcion haremos que el elemento icono quede arriba del texto que lo describe*/
+    gap: 5px;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none;
+    justify-content: space-around;/*los elementos ganan espacio entre ellos*/
+    height: 100%;
+}
+
+
+
 @media(min-width:834px) {/*solo se mostrara cuando tenga al menos esta cantidad de pixeles*/
     
     .cabecera__buscar__item{
