@@ -5,11 +5,23 @@
     position: fixed;/*fija la posicion de los elementos de nuesto menú*/
     top: 0;/*establecemos en donde se mantendra fijo*/
 }
+.cabecera__buscar__item{
+    display: none;
+}
 
+.rodapie__container{
+    display: flex;
+    /*flex-direction: column;cambia orientacion de horizontal a vertical*/
+    /*flex-wrap: wrap;ayuda a quebrar las columnas/filas en partes para adaptarse al espacio de la pagina*/
+    flex-flow: column wrap;/*auttomatiza las dos lineas de codigo anteriores*/
+}
 
 @media(min-width:834px) {/*solo se mostrara cuando tenga al menos esta cantidad de pixeles*/
     
     .cabecera__buscar__item{
         display: block;
     }    
+    .rodapie__container{
+        justify-content: space-between;/**/
+    }
 }
