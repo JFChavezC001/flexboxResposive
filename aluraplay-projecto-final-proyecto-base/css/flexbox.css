@@ -16,6 +16,15 @@
     flex-flow: column wrap;/*auttomatiza las dos lineas de codigo anteriores*/
 }
 
+/*SECCION SUPERIOR*/
+.superior__seccion__container{
+    display: flex;
+    align-items:center;
+    white-space:nowrap;/*evitamos que el texto se parta/divida*/
+    overflow: scroll;/*agregamos una barra de desplazamiento para poder visualizar */
+    gap: 15px;/*crea un espaciado entre los items de la seccion superior*/
+}
+
 @media(min-width:834px) {/*solo se mostrara cuando tenga al menos esta cantidad de pixeles*/
     
     .cabecera__buscar__item{
